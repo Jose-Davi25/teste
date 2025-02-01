@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    /* Palheta de cores */
+    --Roxo:  #581A84;
+    --Roxo-escuro: #480048;
+    --Prata: #C0C0C0;
+    --Dourado: #FFD700;
+    --Preto: #000;
+    --Branco: #FFF;
+}
+body{
+    background-image: url(background-02.png);
+}
+
+
+.topo {
+    background-color: var(--Preto);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topo a {
+    color: var(--Dourado);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.topo a:hover {
+    text-decoration: underline;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: var(--Branco);
+}
+th, td {
+    border: 1px solid var(--Preto);
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: var(--Prata);
+}
+.topo{
+    display: flex;
+}
+.bx-edit{
+    font-size: 30px;
+    color: #581A84;
+}
+.bx-trash{
+    font-size: 30px;
+    color: red;
+}
+
