@@ -1,6 +1,6 @@
 <?php 
 
-    include "conexaoDB.php";
+    include "../conexaoDB.php";
 
     $ID_Produto = $_POST['ID_Produto'];
     $Nome_Produto = $_POST['Nome_Produto'];
@@ -16,6 +16,6 @@
 
      $mysqli->close();
 
-     header("Location: 5pagina-Tabela_Produtos.php");
+     header("Location: ../Paginas_PHP/5pagina-Tabela_Produtos.php");
 
 ?>

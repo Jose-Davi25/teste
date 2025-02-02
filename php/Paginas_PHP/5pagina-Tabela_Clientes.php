@@ -1,5 +1,5 @@
 <?php 
-    include "conexaoDB.php";
+    include "../conexaoDB.php";
 
     $sql = "SELECT * FROM Cliente ORDER BY Nome_Cliente";
    
@@ -11,13 +11,13 @@
     <meta charset="utf-8"/>
     <title>CRUD</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="Style-Tabelas.css">
+    <link rel="stylesheet" href="../../css/Style-Tabelas.css">
 </head>
 <body>
     <div class="topo">
-        <a href="4pagina-Cadastro_Produtos.html"><i class='bx bx-left-arrow-circle'></i>Voltar</a><br><br>
+        <a href="../../html/4pagina-Cadastro_Produtos.html"><i class='bx bx-left-arrow-circle'></i>Voltar</a><br><br>
         <h1>Clientes cadastrados</h1>
-        <a href="3pagina-Cadastro_Clientes.html" class="novoC">Adicionar novo cliente</a>
+        <a href="../../html/3pagina-Cadastro_Clientes.html" class="novoC">Adicionar novo cliente</a>
     </div> 
     <?php
        if ($Cliente->num_rows == 0) echo "<p>Não existem Cliente cadastrados</p>";

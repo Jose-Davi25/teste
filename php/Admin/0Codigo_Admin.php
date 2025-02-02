@@ -1,5 +1,5 @@
 <?php
-include('conexaoDB.php');
+include('../conexaoDB.php');
 
 if(isset($_POST['Usuario']) || isset($_POST['Senha'])) {
 
@@ -27,7 +27,7 @@ if(isset($_POST['Usuario']) || isset($_POST['Senha'])) {
             $_SESSION['CPF'] = $usuario['CPF'];
             $_SESSION['Usuario'] = $usuario['Usuario'];
     
-            header("Location: 5pagina-Tabela_Produtos_Cadastrados.php");
+            header("Location: ../Paginas_PHP/5pagina-Produtos_Cadastrados.php");
 
         } else {
             echo "Falha: Usuário ou Senha incorretos";

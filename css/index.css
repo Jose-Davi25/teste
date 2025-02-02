@@ -95,7 +95,7 @@ body {
 /* ------ */
 /* Estilos para a seção de categorias */
 .categorias {
-    background-image: url(/img/Z-Background.png);
+    background-image: url(../img/Z-Background.png);
     padding: 5rem;
     text-align: center;
     height: auto;

@@ -1,5 +1,5 @@
 <?php
-    include "conexaoDB.php";
+    include "../conexaoDB.php";
 
     $ID_Produto = $_GET['ID_Produto'];
 
@@ -99,7 +99,7 @@
     <div>
         <a href="5pagina-Tabela_Produtos.php"><i class='bx bx-left-arrow-circle'></i>Voltar</a><br><br>
     </div>
-    <form action="Codigo-Editar_Produto.php" method="post">
+    <form action="../Produto/Codigo-Editar_Produto.php" method="post">
         <h1>Editar Produto</h1>
 
         <input type="hidden" name="ID_Produto" value="<?php echo $ID_Produto; ?>">

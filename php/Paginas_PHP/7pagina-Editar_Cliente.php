@@ -1,5 +1,5 @@
 <?php
-    include "conexaoDB.php";
+    include "../conexaoDB.php";
 
     $ID_Cliente = $_GET['ID_Cliente'];
 
@@ -95,7 +95,7 @@
         <a href="5pagina-Tabela_Clientes.php"><i class='bx bx-left-arrow-circle'></i>Voltar</a><br><br>
     </div>
 
-    <form action="Codigo-Editar_Cliente.php" method="post">
+    <form action="../Cliente/Codigo-Editar_Cliente.php" method="post">
         <h1>Editar Cadastro</h1>
 
         <input type="hidden" name="ID_Cliente" value="<?php echo $ID_Cliente; ?>">

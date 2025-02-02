@@ -1,5 +1,5 @@
 <?php
-    include "conexaoDB.php";
+    include "../conexaoDB.php";
 
     $ID_Cliente = $_GET['ID_Cliente'];
 
@@ -63,7 +63,7 @@
 </style>
 <body>
 
-    <form action="Codigo-Excluir_Cliente.php" method="post">
+    <form action="../Produto/Codigo-Excluir_Cliente.php" method="post">
         <input type="hidden" name="ID_Cliente" value="<?php echo $ID_Cliente; ?>">
 
         <label>Deseja mesmo excluir o cliente <?php echo $Nome_Cliente;?>?</label><br>
