@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     list-style: none;
@@ -10,9 +11,11 @@
     border: none;
     transform: .2 linear;
 }
+
 :root {
-    font-size: 62.5%;/*font-size: 16px;*/
-    --roxo-claro:#9B5CB5;
+    font-size: 62.5%;
+    /*font-size: 16px;*/
+    --roxo-claro: #9B5CB5;
     --Roxo-medio: #581A84;
     --Roxo-escuro: #480048;
     --Prata: #C0C0C0;
@@ -21,16 +24,18 @@
     --Branco: #FFF;
     --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-.btn{
+
+.btn {
     display: inline-block;
     font-size: 1.5rem;
     color: var(--Roxo-escuro);
-    background-color:var(--Dourado);
+    background-color: var(--Dourado);
     margin-top: 1rem;
     padding: .8rem 3rem;
     border: none;
@@ -38,10 +43,12 @@ html{
     cursor: pointer;
     font-weight: bold;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #C0C0C0;
-    color:var(--Roxo-medio);
+    color: var(--Roxo-medio);
 }
+
 /* ------------- INICIO DA BARRA DE NAVEGAÇÃO SUPERIOR ------------- */
 .topo-site {
     display: flex;
@@ -53,37 +60,44 @@ html{
     justify-content: space-between;
     padding: 1rem 9%;
     z-index: 1000;
-    background-color:var(--Preto);
+    background-color: var(--Preto);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+
 .menu-site a {
     color: var(--Dourado);
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0 3rem;
 }
-.menu-site a:hover{
+
+.menu-site a:hover {
     color: var(--Roxo-medio);
 }
-.icons i{
+
+.icons i {
     font-size: 2rem;
     margin: .4rem;
     align-items: center;
 }
-.icons a{
-    color:var(--Dourado);
+
+.icons a {
+    color: var(--Dourado);
     font-size: 1.7rem;
     margin-left: 1.7rem;
     cursor: pointer;
 }
-.icons a:hover{
+
+.icons a:hover {
     color: var(--Roxo-medio);
 }
+
 /* --------------- INICIO DO BANNER -------------- */
-body{
+body {
     background: url('../img/Z-Background.png') no-repeat center center fixed;
-    background-size: cover; 
+    background-size: cover;
 }
+
 .texto-sobre-img {
     text-align: center;
     margin-top: 10%;
@@ -92,59 +106,68 @@ body{
     margin-left: 4rem;
     margin-right: 4rem;
     border-color: #FFD700;
-    background:var(--Roxo-medio);
+    background: var(--Roxo-medio);
 }
+
 .texto-sobre-img h1 {
     font-size: 50px;
     font-weight: bold;
     color: var(--Dourado);
     text-shadow: var(--text-shadow);
 }
+
 .texto-sobre-img h2 {
     font-size: 44px;
     font-weight: bold;
     color: white;
     text-shadow: var(--text-shadow);
 }
+
 /* -------------- INICIO DA AREA DE TEXTO CADASTRO DE PRODUTOS -------------- */
 .cadastro-produtos {
     padding: 20px;
     text-align: left;
     display: flex;
     width: 100%;
-    padding: 4rem; 
+    padding: 4rem;
 }
-.box-textos{
+
+.box-textos {
     background-color: var(--Roxo-medio);
     padding: 20px;
     height: 500px;
     width: 40%;
-    text-align: center;   
+    text-align: center;
 }
-.cadastro-produtos .box-textos h2{
+
+.cadastro-produtos .box-textos h2 {
     color: var(--Dourado);
     text-shadow: var(--text-shadow);
     font-size: 2.7rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
-.cadastro-produtos .box-textos p{
+
+.cadastro-produtos .box-textos p {
     color: var(--Branco);
     text-shadow: var(--text-shadow);
     font-size: 1.8rem;
     text-align: center;
     padding: 2rem;
 }
-.cadastro-produtos .box-textos .btn{
+
+.cadastro-produtos .box-textos .btn {
     margin: 6rem;
 }
+
 /* ------ INICIO DO FORMULARIO CADASTRO DE PRODUTOS ------ */
 .box-cadastro {
-    background-color: #fff; 
+    background-color: #fff;
     padding: 30px;
     width: 60%;
     max-height: 500px;
 }
+
 .box-cadastro label {
     display: block;
     margin-bottom: 8px;
@@ -153,6 +176,7 @@ body{
     color: var(--Roxo-medio);
     text-shadow: var(--text-shadow);
 }
+
 .box-cadastro input,
 .box-cadastro textarea {
     width: 100%;
@@ -163,10 +187,12 @@ body{
     box-sizing: border-box;
     font-size: 16px;
 }
+
 .box-cadastro textarea {
     resize: vertical;
     height: 60px;
 }
+
 .box-cadastro input[type="submit"] {
     background-color: var(--Roxo-medio);
     color: var(--Dourado);
@@ -176,40 +202,48 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
-    font-weight:500;
+    font-weight: 500;
 }
+
 .box-cadastro input[type="submit"]:hover {
     background-color: var(--Dourado);
     color: #581A84;
 }
+
 /* ------------------ INICIO DO RODAPÉ -----------------*/
-.rodape{
+.rodape {
     background-color: var(--Dourado);
     text-align: center;
 
 }
+
 .box-conteiner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     align-items: center;
 }
-.box-conteiner .box h3{
-    font-size: 1.5rem;;
+
+.box-conteiner .box h3 {
+    font-size: 1.5rem;
+    ;
     text-transform: capitalize;
     color: var(--Roxo-medio);
-    padding: 1rem ;
+    padding: 1rem;
 }
-.box-conteiner .box p{
+
+.box-conteiner .box p {
     font-size: 1.3rem;
     color: var(--Roxo-escuro);
     padding: .5rem;
 }
-.redes-sociais{
+
+.redes-sociais {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.redes-sociais a{
+
+.redes-sociais a {
     color: var(--Roxo-escuro);
     border: .1rem solid var(--Roxo-escuro);
     border-radius: 10%;
@@ -219,77 +253,93 @@ body{
     text-align: center;
     font-size: 1.8rem;
 }
-.redes-sociais a:hover{
+
+.redes-sociais a:hover {
     background-color: var(--Roxo-medio);
     color: #fff;
     border: .1rem solid var(--Roxo-medio);
 }
-.link{
-  display: block;
-  font-size: 1.3rem;
-  line-height: 2;
-  padding: .5rem 0;
-  text-decoration: underline;
-  color: var(--Roxo-escuro)  
+
+.link {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2;
+    padding: .5rem 0;
+    text-decoration: underline;
+    color: var(--Roxo-escuro)
 }
-.link:hover{
+
+.link:hover {
     text-shadow: var(--text-shadow);
 }
-.direitos p{
+
+.direitos p {
     text-align: center;
     font-size: 1.2rem;
     color: var(--Branco);
     background-color: var(--Roxo-medio);
     padding: 10px 0;
 }
+
 /* ------------ INICIO DAS CONFIG RESPOSIVIDADE ------------ */
 @media only screen and (max-width: 768px) {
     .topo-site {
         padding: 1rem 5%;
     }
+
     .menu-site {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         width: 100%;
         background-color: var(--Preto);
         z-index: 999;
         text-align: center;
     }
+
     #contato1,
-    #sobre1{
+    #sobre1 {
         display: none;
     }
+
     .menu-site a {
         margin: 0;
         padding: 1rem;
         color: var(--Dourado);
         font-size: 1.2rem;
     }
+
     .icons {
         display: block;
     }
+
     .banner img {
         width: 100%;
         height: 200px;
     }
+
     .cadastro-produtos {
         flex-direction: column;
         padding: 2rem;
     }
+
     .box-textos {
         width: 100%;
         height: auto;
     }
+
     .box-cadastro {
         width: 100%;
     }
+
     .sobre {
         flex-direction: column;
     }
+
     .text {
         padding: 2rem;
         margin: 2rem;
     }
+
     .motinha img {
         width: 100%;
     }

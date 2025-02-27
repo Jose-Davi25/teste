@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="Pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +9,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/Style-Cadastro_Produtos.css">
 </head>
+
 <body>
     <!------------- INICIO DA BARRA DE NAVEGAÇÃO SUPERIOR ------------->
     <header class="topo-site">
-            <img src="../img/logo-amarelo_roxo-removebg.png" alt="logo" width="80">
+        <img src="../img/logo-amarelo_roxo-removebg.png" alt="logo" width="80">
         <nav class="menu-site">
             <a id="inicio" href="index.html">Voltar ao Ínicio</a>
             <a href="../php/Paginas_PHP/5pagina-Tabela_Produtos.php">Produtos</a>
@@ -20,11 +21,11 @@
         </nav>
     </header>
     <!------------- INICIO DO BANNER ------------->
-    <div class="banner" id="inicio" >
+    <div class="banner" id="inicio">
         <div class="texto-sobre-img">
             <h1> SEJA BEM-VINDO(A),</h1>
             <h2>Registre seu produto aqui!</h2>
-        </div>    
+        </div>
     </div>
     <main class="page">
         <!--------------- INICIO CADASTRO DE PRODUTOS--------------->
@@ -32,10 +33,11 @@
             <div class="box-textos">
                 <h2>Cadastre seu Produto</h2>
                 <p>Compartilhe a qualidade dos seus produtos conosco! Preencha o formulário abaixo para adicionar seus
-                itens ao nosso catálogo.</p>
+                    itens ao nosso catálogo.</p>
                 <a href="../php/Paginas_PHP/5pagina-Tabela_Produtos.php" class="btn">Ver Produtos</a>
             </div>
-            <form class="box-cadastro" action="../php/Produto/Codigo-Cadastro_Produtos.php" method="post" enctype="multipart/form-data">
+            <form class="box-cadastro" action="../php/Produto/Codigo-Cadastro_Produtos.php" method="post"
+                enctype="multipart/form-data">
                 <label for="nome">Nome do Produto:</label>
                 <input type="text" id="nome" name="nome" required>
                 <label for="preco">Preço:</label>
@@ -82,4 +84,5 @@
         </section>
     </footer>
 </body>
+
 </html>

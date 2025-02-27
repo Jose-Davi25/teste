@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +11,9 @@
     border: none;
     transform: .2 linear;
 }
+
 :root {
-   
+
     --Roxo-escuro: #490148;
     --Prata: #C0C0C0;
     --Dourado: #FFD51E;
@@ -20,15 +22,20 @@
     --Branco: #FFF;
     --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    margin: 0; /* Remove margens padrão do corpo */
-    padding: 0; /* Remove preenchimento padrão do corpo */
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
+    margin: 0;
+    /* Remove margens padrão do corpo */
+    padding: 0;
+    /* Remove preenchimento padrão do corpo */
 }
 
 .container {
@@ -37,14 +44,15 @@ body {
     align-items: center;
     background-color: var(--Roxo-escuro);
     height: 110px;
-    border-bottom:5px solid var(--Dourado) ;
+    border-bottom: 5px solid var(--Dourado);
 }
 
 
 .box-0 img {
     width: 120px;
     margin: 0 70px;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3)); /* Adiciona uma sombra ao logotipo */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    /* Adiciona uma sombra ao logotipo */
 }
 
 .box-1-2 {
@@ -52,13 +60,14 @@ body {
 
 }
 
-.box-1, .box-2 {
+.box-1,
+.box-2 {
     display: flex;
     width: auto;
     background-color: #f9f9f9;
     color: var(--Roxo-escuro);
     border-radius: 20px;
-    border-style:groove;
+    border-style: groove;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 5px;
     text-align: center;
@@ -66,14 +75,18 @@ body {
     margin: 20px;
     font-size: 0.1rem;
 }
-.box-1, .box-2 a{
+
+.box-1,
+.box-2 a {
     font-size: 12px;
 }
-.box-1 i{
+
+.box-1 i {
     font-size: 20px;
     margin-right: 5px;
 }
-.box-2 i{
+
+.box-2 i {
     font-size: 25px;
     margin-right: 5px;
 }
@@ -92,6 +105,7 @@ body {
 .cta-button:hover {
     background-color: var(--Roxo-escuro);
 }
+
 /* ------ */
 /* Estilos para a seção de categorias */
 .categorias {
@@ -127,9 +141,9 @@ body {
     width: 130px;
     border: 2px solid #490148;
     background-color: #FFF;
-    border-radius: 20px; 
+    border-radius: 20px;
     transition: transform 0.3s;
-    
+
 }
 
 .categoria:hover {
@@ -141,7 +155,7 @@ body {
     flex-direction: column;
     width: 80px;
     align-items: center;
-   
+
 }
 
 .categoria a {
@@ -152,61 +166,71 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
 /* Estilos para a seção "Sobre Nós" */
 /* -------------- INICIO DA AREA SOBRE ------------------*/
-.sobre{
+.sobre {
     background-color: var(--Branco);
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
     margin: 0;
-    
+
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    
+
 }
-.text h2{
+
+.text h2 {
     margin-bottom: 20px;
     font-size: 2.8rem;
     color: var(--vermelho);
-    
+
 }
-.sobre .text P{
+
+.sobre .text P {
     font-size: 1.5rem;
     font-weight: 500;
     text-align: justify;
     color: var(--Roxo-escuro);
 }
+
 /* ------------------ INICIO DO RODAPÉ -----------------*/
-.rodape{
+.rodape {
     background-color: var(--Dourado);
     text-align: center;
 }
+
 .box-conteiner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     align-items: center;
 }
-.box{
+
+.box {
     font-size: 1.3rem;
 }
-.box h3{
-    font-size: 1.5rem;;
+
+.box h3 {
+    font-size: 1.5rem;
+    ;
     text-transform: capitalize;
     color: var(--Roxo-escuro);
-    padding: 1rem ;
+    padding: 1rem;
 }
 
-.redes-sociais{
+.redes-sociais {
     margin-top: 1rem;
     margin-bottom: 1rem;
 
 }
-.redes-sociais a{
+
+.redes-sociais a {
     color: var(--Roxo-escuro);
     border: .1rem solid var(--Roxo-escuro);
     border-radius: 10%;
@@ -217,26 +241,30 @@ body {
     font-size: 1.8rem;
 
 }
-.redes-sociais a:hover{
+
+.redes-sociais a:hover {
     background-color: var(--Roxo-escuro);
     color: var(--Branco);
     border: .1rem solid var(--Roxo-escuro);
 }
-.link{
-  display: block;
-  font-size: 1.3rem;
-  line-height: 2;
-  padding: .5rem 0;
-  text-decoration: underline;
-  color: var(--Roxo-escuro)  
+
+.link {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2;
+    padding: .5rem 0;
+    text-decoration: underline;
+    color: var(--Roxo-escuro)
 }
-.link:hover{
+
+.link:hover {
     font-weight: 600;
 }
-.direitos p{
+
+.direitos p {
     text-align: center;
     font-size: 1.2rem;
     color: var(--Branco);
     background-color: var(--Roxo-escuro);
     padding: 10px 0;
-}    
+}

@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +8,15 @@
 
 :root {
     /* Palheta de cores */
-    --Roxo:  #581A84;
+    --Roxo: #581A84;
     --Roxo-escuro: #480048;
     --Prata: #C0C0C0;
     --Dourado: #FFD700;
     --Preto: #000;
     --Branco: #FFF;
 }
-body{
+
+body {
     background-image: url(background-02.png);
 }
 
@@ -35,22 +35,26 @@ body{
     text-decoration: none;
     margin: 0 10px;
 }
+
 .topo a:hover {
     text-decoration: underline;
 }
 
-table{
+table {
     border-collapse: collapse;
     width: 80%;
     margin: auto;
     margin-top: 30px;
     background-color: var(--Branco);
 }
-th, td {
+
+th,
+td {
     border: 1px solid var(--Preto);
     padding: 8px;
     text-align: left;
 }
+
 th {
     background-color: #f2f2f2;
 }
@@ -58,15 +62,17 @@ th {
 tr:hover {
     background-color: var(--Prata);
 }
-.topo{
+
+.topo {
     display: flex;
 }
-.bx-edit{
+
+.bx-edit {
     font-size: 30px;
     color: #581A84;
 }
-.bx-trash{
+
+.bx-trash {
     font-size: 30px;
     color: red;
 }
-

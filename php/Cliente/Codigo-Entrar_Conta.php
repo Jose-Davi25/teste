@@ -1,14 +1,14 @@
 <?php
 include('../conexaoDB.php');
 
-if(isset($_POST['Nome_Cliente']) || isset($_POST['Senha_Cliente'])) {
+if (isset($_POST['Nome_Cliente']) || isset($_POST['Senha_Cliente'])) {
 
-    if(strlen($_POST['Nome_Cliente'])==0) {
+    if (strlen($_POST['Nome_Cliente']) == 0) {
         echo "Preencha seu Nome";
-    } else if(strlen($_POST['Senha_Cliente'])==0) {
+    } else if (strlen($_POST['Senha_Cliente']) == 0) {
         echo "Preencha sua Senha";
     } else {
-        
+
         $Nome_Cliente = $mysqli->real_escape_string($_POST['Nome_Cliente']);
         $Senha_Cliente = $mysqli->real_escape_string($_POST['Senha_Cliente']);
 
@@ -17,16 +17,16 @@ if(isset($_POST['Nome_Cliente']) || isset($_POST['Senha_Cliente'])) {
 
         $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1) {
+        if ($quantidade == 1) {
 
             $usuario = $sql_query->fetch_assoc();
 
-            if(!isset($_SESSION)) {
+            if (!isset($_SESSION)) {
                 session_start();
             }
             $_SESSION['ID_Cliente'] = $usuario['ID_Cliente'];
             $_SESSION['Nome_Cliente'] = $usuario['Nome_Cliente'];
-    
+
             header("Location: ../../html/4pagina-Cadastro_Produtos.html");
 
         } else {

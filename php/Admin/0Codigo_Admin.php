@@ -1,14 +1,14 @@
 <?php
 include('../conexaoDB.php');
 
-if(isset($_POST['Usuario']) || isset($_POST['Senha'])) {
+if (isset($_POST['Usuario']) || isset($_POST['Senha'])) {
 
-    if(strlen($_POST['Usuario'])==0) {
+    if (strlen($_POST['Usuario']) == 0) {
         echo "Preencha seu Nome";
-    } else if(strlen($_POST['Senha'])==0) {
+    } else if (strlen($_POST['Senha']) == 0) {
         echo "Preencha sua Senha";
     } else {
-        
+
         $Usuario = $mysqli->real_escape_string($_POST['Usuario']);
         $Senha = $mysqli->real_escape_string($_POST['Senha']);
 
@@ -17,16 +17,16 @@ if(isset($_POST['Usuario']) || isset($_POST['Senha'])) {
 
         $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1) {
+        if ($quantidade == 1) {
 
             $usuario = $sql_query->fetch_assoc();
 
-            if(!isset($_SESSION)) {
+            if (!isset($_SESSION)) {
                 session_start();
             }
             $_SESSION['CPF'] = $usuario['CPF'];
             $_SESSION['Usuario'] = $usuario['Usuario'];
-    
+
             header("Location: ../Paginas_PHP/5pagina-Produtos_Cadastrados.php");
 
         } else {

@@ -21,15 +21,15 @@ $resultadoConsulta = $mysqli->query($consultaDosProdutos);
 <!------------- INICIO DA BARRA DE NAVEGAÇÃO SUPERIOR ------------->
 <header class="topo-site">
     <!-- INICIO DA LOGO MARCA -->
-        <img src="../../img/logo-amarelo_roxo-removebg.png" alt="logo" width="80">
-        <!-- FIM DA LOGO MARCA -->
+    <img src="../../img/logo-amarelo_roxo-removebg.png" alt="logo" width="80">
+    <!-- FIM DA LOGO MARCA -->
 
     <!-- INICIO MENU -->
     <nav class="menu-site">
         <a href="../../html/4pagina-Cadastro_Produtos.html"> Registrar Produtos</a>
         <a href="5pagina-Tabela_Produtos.php"> Editar Produtos</a>
         <a href="5pagina-Tabela_Clientes.php">Tabela de Clientes</a>
-        <a href="../../html/pagina-Index.php"><i class='bx bx-left-arrow-circle'></i>Voltar</a><br><br>
+        <a href="../../html/index.html"><i class='bx bx-left-arrow-circle'></i>Voltar</a><br><br>
     </nav>
     <!-- FIM MENU -->
 </header>
@@ -51,7 +51,7 @@ $resultadoConsulta = $mysqli->query($consultaDosProdutos);
                 echo '</div>';
             }
             ?>
-            
+
         </div>
     </section>
 

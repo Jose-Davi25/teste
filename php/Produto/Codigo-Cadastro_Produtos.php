@@ -45,28 +45,29 @@
 
 <body>
 
-        <?php
-        include('../conexaoDB.php');
+    <?php
+    include('../conexaoDB.php');
 
 
-        $nome = $_POST['nome'];
-        $preco = $_POST['preco'];
-        $descricao = $_POST['descricao'];
+    $nome = $_POST['nome'];
+    $preco = $_POST['preco'];
+    $descricao = $_POST['descricao'];
 
-        $imagemPath = '../../img/uploads/uploads' . basename($_FILES['imagem']['name']);
-        move_uploaded_file($_FILES['imagem']['tmp_name'], $imagemPath) or die('Erro ao fazer upload da imagem.');
+    $imagemPath = '../../img/uploads/uploads' . basename($_FILES['imagem']['name']);
+    move_uploaded_file($_FILES['imagem']['tmp_name'], $imagemPath) or die('Erro ao fazer upload da imagem.');
 
-        $sql = "INSERT INTO Produtos (Nome_Produto, Preco_Produto, Descricao_Produto, Imagem_Path) 
+    $sql = "INSERT INTO Produtos (Nome_Produto, Preco_Produto, Descricao_Produto, Imagem_Path) 
                 VALUES ('$nome', $preco, '$descricao', '$imagemPath')";
 
-        $mensagem = ($mysqli->query($sql)) ? 'Produto cadastrado com sucesso.' : 'Erro ao cadastrar o produto: ' . $mysqli->error;
+    $mensagem = ($mysqli->query($sql)) ? 'Produto cadastrado com sucesso.' : 'Erro ao cadastrar o produto: ' . $mysqli->error;
 
-        $mysqli->close();
+    $mysqli->close();
 
-        ?>
-        <div class="menssagem">
-                <p><?php echo $mensagem; ?></p>
-                <a href="../Paginas_PHP/5pagina-Produtos_Cadastrados.php">OK</a>
-        </div>
+    ?>
+    <div class="menssagem">
+        <p><?php echo $mensagem; ?></p>
+        <a href="../Paginas_PHP/5pagina-Produtos_Cadastrados.php">OK</a>
+    </div>
 </body>
+
 </html>

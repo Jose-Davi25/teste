@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -12,6 +13,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 .wrapper {
     width: 450px;
     background: transparent;
@@ -23,16 +25,19 @@ body {
     padding: 30px 40px;
     font-size: 18px;
 }
+
 .wrapper h1 {
     font-size: 38px;
     text-align: center;
 }
+
 .wrapper .input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 20px 0;
 }
+
 .input-box input {
     width: 100%;
     height: 100%;
@@ -45,9 +50,11 @@ body {
     color: #fff;
     padding: 20px 45px 20px 20px;
 }
+
 .input-box input::placeholder {
     color: #c0c0c0;
 }
+
 .input-box i {
     position: absolute;
     right: 20px;
@@ -55,6 +62,7 @@ body {
     transform: translateY(-50%);
     font-size: 20px;
 }
+
 .wrapper .btn {
     width: 100%;
     height: 45px;
@@ -68,19 +76,23 @@ body {
     font-weight: 600;
     margin-bottom: 17px;
 }
-.btn:hover{
+
+.btn:hover {
     background: #caae0e;
 }
-.register-link p{
+
+.register-link p {
     font-size: 20px;
     color: #fff;
     text-align: center;
 }
-.register-link a{
+
+.register-link a {
     color: #FFD700;
     padding: 8px;
-    text-decoration:none;   
+    text-decoration: none;
 }
-.register-link a:hover{
-    text-decoration:underline;
+
+.register-link a:hover {
+    text-decoration: underline;
 }

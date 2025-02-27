@@ -1,12 +1,12 @@
-    <?php
-        include "../conexaoDB.php";
+<?php
+include "../conexaoDB.php";
 
-        $ID_Produto = $_POST['ID_Produto'];
+$ID_Produto = $_POST['ID_Produto'];
 
-        $SQL = "DELETE FROM produtos WHERE ID_Produto = $ID_Produto";
+$SQL = "DELETE FROM produtos WHERE ID_Produto = $ID_Produto";
 
-        $mysqli->query($SQL) or die("Query falhou");
+$mysqli->query($SQL) or die("Query falhou");
 
-        header("Location: ../Paginas_PHP/5pagina-Tabela_Produtos.php");
+header("Location: ../Paginas_PHP/5pagina-Tabela_Produtos.php");
 
-    ?>
+?>
